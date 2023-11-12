@@ -8,6 +8,35 @@ a {
   color: #00B7FF;
 }
 
+h1 {
+  color: #333;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.post {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  color: #333;
+}
+
+.post p {
+  color: #555;
+}
+
+.post strong {
+  color: #00B7FF;
+}
+
 .login-form {
   max-width: 300px;
   margin: 0 auto;
