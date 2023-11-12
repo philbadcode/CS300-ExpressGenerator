@@ -10,11 +10,11 @@
   <h1><%= title %></h1>
 
   <div class="posts">
-    <% comments.forEach(comment => { %>
+    <% posts.forEach(post => { %>
       <div class="post">
-        <h3><%= comment.name %></h3>
-        <p><%= comment.body %></p>
-        <p><strong>By:</strong> <%= comment.email %></p>
+        <h3><%= post.title %></h3>
+        <p><%= post.body %></p>
+        <p><strong>User ID:</strong> <%= post.userId %></p>
       </div>
     <% }); %>
   </div>
