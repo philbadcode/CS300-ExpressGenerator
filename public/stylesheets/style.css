@@ -46,7 +46,6 @@ a {
 .dashboard {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .comment-card {
@@ -76,9 +75,8 @@ a {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #00B7FF;
   color: white;
-  padding: 10px;
 }
 
 .navbar-container {
@@ -87,23 +85,26 @@ a {
   align-items: center;
 }
 
-.navbar-logo a {
+.navbar-logo {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5em;
 }
 
-.navbar-logout a {
-  color: red;
+.navbar-logout {
+  color: lightgray;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.0em;
-  margin-left: auto;
+  margin-left: 20px;
+  margin-right: auto;
 }
 
 .navbar-links {
   display: flex;
+  font-size: 1.0em;
+  font-weight: bold;
 }
 
 .navbar-links a {
@@ -132,8 +133,14 @@ a {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #00B7FF;
     z-index: 1;
+  }
+
+  .navbar-link {
+    padding: 10px;
+    height: auto;
+    align-items: center;
   }
 
   .navbar-links.show {
