@@ -77,6 +77,7 @@ a {
 .navbar {
   background-color: #00B7FF;
   color: white;
+  padding: 10px;
 }
 
 .navbar-container {
