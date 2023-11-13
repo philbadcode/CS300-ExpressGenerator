@@ -1,0 +1,26 @@
+<!-- navbar.ejs -->
+
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="/">Your App Logo</a>
+      </div>
+      <div class="navbar-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/profile">Profile</a>
+      </div>
+      <div class="navbar-mobile-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    function toggleMenu() {
+      const navbarLinks = document.querySelector('.navbar-links');
+      navbarLinks.classList.toggle('show');
+    }
+  </script>
+  

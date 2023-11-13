@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+    <%- include('navbar') %>
+    <div class="profile-container">
+        <div class="profile-header">
+          <img src="https://placekitten.com/200/200" alt="Profile Picture">
+          <h1><%= username %></h1>
+          <p>Web Developer</p>
+          <button class="follow-button">Follow</button>
+        </div>
+      
+        <div class="profile-content">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ullamcorper nisi.</p>
+      
+          <h2>Posts</h2>
+          <div class="post">
+            <p class="post-date">Posted on June 1, 2023</p>
+            <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ullamcorper nisi.</p>
+          </div>
+      
+          <div class="post">
+            <p class="post-date">Posted on May 15, 2023</p>
+            <p class="post-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
