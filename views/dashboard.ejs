@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include ./partials/navbar %>
+  <div class="page-container">
   <h1>Posts</h1>
   <div class="dashboard">
     <% comments.forEach(comment => { %>
@@ -19,6 +20,7 @@
         <p class="comment-body"><%= comment.body %></p>
       </div>
     <% }); %>
+  </div>
   </div>
 </body>
 </html>
