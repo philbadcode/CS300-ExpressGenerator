@@ -3,7 +3,7 @@ var axios = require('axios');
 var router = express.Router();
 
 /* GET dashboard page with comments. */
-router.get('/dashboard', async function(req, res, next) {
+router.get('/', async function(req, res, next) {
   try {
     // Fetch comments from jsonplaceholder using axios
     const response = await axios.get('https://jsonplaceholder.typicode.com/comments');
