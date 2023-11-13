@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
+  <title>Social Media Dashboard</title>
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-  <h1><%= title %></h1>
+  <h1>Social Media Dashboard</h1>
 
-  <div class="posts">
-    <% posts.forEach(post => { %>
-      <div class="post">
-        <h3><%= post.title %></h3>
-        <p><%= post.body %></p>
-        <p><strong>User ID:</strong> <%= post.userId %></p>
+  <div class="dashboard">
+    <% comments.forEach(comment => { %>
+      <div class="comment-card">
+        <p class="comment-author"><%= comment.name %></p>
+        <p class="comment-body"><%= comment.body %></p>
+        <p class="comment-email"><strong>Email:</strong> <%= comment.email %></p>
       </div>
     <% }); %>
   </div>

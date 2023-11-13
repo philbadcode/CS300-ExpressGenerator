@@ -2,17 +2,17 @@ var express = require('express');
 var axios = require('axios');
 var router = express.Router();
 
-/* GET dashboard page with posts. */
-router.get('/', async function(req, res, next) {
+/* GET dashboard page with comments. */
+router.get('/dashboard', async function(req, res, next) {
   try {
-    // Fetch posts from jsonplaceholder using axios
-    const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    const posts = response.data;
+    // Fetch comments from jsonplaceholder using axios
+    const response = await axios.get('https://jsonplaceholder.typicode.com/comments');
+    const comments = response.data;
 
-    // Render the dashboard template with the posts data
-    res.render('dashboard', { title: 'Social Media Dashboard', posts });
+    // Render the dashboard template with the comments data
+    res.render('dashboard', { title: 'Social Media Dashboard', comments });
   } catch (error) {
-    console.error('Error fetching posts:', error);
+    console.error('Error fetching comments:', error);
     res.status(500).send('Internal Server Error');
   }
 });

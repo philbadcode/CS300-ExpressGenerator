@@ -8,35 +8,6 @@ a {
   color: #00B7FF;
 }
 
-h1 {
-  color: #333;
-}
-
-.posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-}
-
-.post {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.post h3 {
-  color: #333;
-}
-
-.post p {
-  color: #555;
-}
-
-.post strong {
-  color: #00B7FF;
-}
-
 .login-form {
   max-width: 300px;
   margin: 0 auto;
@@ -70,4 +41,40 @@ h1 {
 
 .form-button:hover {
   background-color: #007bb5;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.comment-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-body {
+  margin-top: 10px;
+}
+
+.comment-email {
+  color: #777;
+  font-size: 0.8em;
 }
