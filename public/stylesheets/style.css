@@ -12,6 +12,7 @@ a {
   margin: 0 auto;
   background: #fff;
   padding: 20px;
+  margin-top: 50px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -91,6 +92,14 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.navbar-logout a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.0em;
+  margin-left: auto;
 }
 
 .navbar-links {
@@ -196,3 +205,4 @@ a {
 .post-content {
   margin: 0;
 }
+
