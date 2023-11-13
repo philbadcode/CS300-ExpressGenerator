@@ -12,8 +12,10 @@
   <div class="dashboard">
     <% comments.forEach(comment => { %>
       <div class="comment-card">
-        <p class="comment-author"><%= comment.name %></p>
-        <p class="comment-email"><%= comment.email %></p>
+        <div class="comment-header">
+          <p class="comment-author"><%= comment.name %></p>
+          <p class="comment-email"><%= comment.email %></p>
+        </div>
         <p class="comment-body"><%= comment.body %></p>
       </div>
     <% }); %>
