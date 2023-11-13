@@ -61,6 +61,8 @@ a {
 
 .comment-author {
   font-weight: bold;
+  display: inline-block;
+  padding-right: 5px;
 }
 
 .comment-body {
@@ -70,4 +72,5 @@ a {
 .comment-email {
   color: #777;
   font-size: 0.8em;
+  display: inline-block;
 }

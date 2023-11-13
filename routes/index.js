@@ -1,14 +1,13 @@
 var express = require('express');
 var router = express.Router();
+var username;
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Login' });
 });
 
 router.post('/login', function(req, res, next) {
-  var username = req.body.username;
-  var password = req.body.password;
+  username = req.body.username;
   res.redirect('/dashboard');
 });
 
